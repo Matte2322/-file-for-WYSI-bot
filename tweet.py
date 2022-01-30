@@ -5,6 +5,7 @@ import schedule
 import time
 
 now = datetime.datetime.now()
+
 utc_now = now.astimezone(pytz.UTC)
 print(utc_now)
 # current_time = now.strftime("%H:%M:%S")
@@ -24,7 +25,7 @@ except:
 
 
 def task():
-    api.update_status(f"HOLY SHIT, WHEN YOU SEE IT. Printed out at {utc_now}.")
+    api.update_status(f"HOLY SHIT, WHEN YOU SEE IT. Printed out at 7:27 AM/PM UTC.")
 
 # converted local time to universal time 
 schedule.every().day.at("23:27").do(task)
@@ -33,7 +34,6 @@ schedule.every().day.at("11:27").do(task)
 while True:
     schedule.run_pending()
     time.sleep(1)
-
 
 
 
