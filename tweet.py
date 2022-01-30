@@ -7,8 +7,8 @@ import time
 now = datetime.datetime.now()
 current_time = now.strftime("%H:%M:%S")
 
-auth = tweepy.OAuthHandler("tkYxTnmNaTTTM1yM2lDsJusPd", "z3wqYmJDvt0mFLF1jz3O2yMpuGDmlRjNXe3JktXShRWuftP5Vk")
-auth.set_access_token("1487688914420723712-y4rUPzLPTv38bRvKQgygrt14gVga1K", "hm2COJnZ6zazz7Wv4l5jGlB8ly51I3rMaK8upxBKyXzKn")
+auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
+auth.set_access_token("ACCESS_KEY", "ACCESS_SECRET")
 
 
 api = tweepy.API(auth)
