@@ -9,11 +9,13 @@ utc_now = now.astimezone(pytz.UTC)
 print(utc_now)
 # current = utc_now.strftime("%H:%M:%S")
 
-auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
-auth.set_access_token("KEY", "SECRET_KEY")
+def myToken():
+    auth = tweepy.OAuthHandler('CONSUMER_KEY', 'CONSUMER_SECRET')
+    auth.set_access_token('KEY', 'SECRET_KEY')
+    return auth
 
 
-api = tweepy.API(auth)
+api = tweepy.API(myToken())
 
 # randomize responses for bot to tweet
 response = [
