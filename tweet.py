@@ -39,10 +39,13 @@ except:
 def task():
     api.update_status(random.choice(response))
         
+def testTask():
+    api.update_status("It's femboy Friday yall!")
 
 # converted local time to universal time 
 schedule.every().day.at("23:27").do(task)
 schedule.every().day.at("11:27").do(task)
+schedule.every().friday.at("00:00").do(testTask)
 
 
 while True:
