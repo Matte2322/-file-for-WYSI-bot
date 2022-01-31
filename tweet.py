@@ -21,7 +21,9 @@ response = [
     "WYSI, THE FUNNY NUMBER HOLY SHIT!!!",
     "727, haha funny number. So funny that I fuck...",
     "I love cookiezi and aireu so much that I love it.",
-    "Futa cock."
+    "Futa cock.",
+    "WYSI",
+    "Haha, when you see the unfunny number."
 ]
 
 
