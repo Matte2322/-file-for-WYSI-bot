@@ -7,7 +7,6 @@ import random
 now = datetime.datetime.now()
 utc_now = now.astimezone(pytz.UTC)
 print(utc_now)
-# current = utc_now.strftime("%H:%M:%S")
 
 def myToken():
     auth = tweepy.OAuthHandler('CONSUMER_KEY', 'CONSUMER_SECRET')
